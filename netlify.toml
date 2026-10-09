@@ -1,0 +1,6 @@
+# The Telegram listener (listener.py) is a long-running Python process and
+# cannot run on Netlify. Only the static info page in site/ is deployed.
+# Publishing a dedicated folder (not the repo root) keeps config.json private.
+[build]
+  command = "echo 'No build step required'"
+  publish = "site"
